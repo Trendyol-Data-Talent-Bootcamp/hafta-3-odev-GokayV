@@ -19,7 +19,7 @@ from `dsmbootcamp.gokay_varcok.semi_structured_hw` gv
 #car ve manufacture arraylerini unnest ederek her iki array içindeki id kolonları üzerinden joinlemek
 cross join unnest(car) car
 cross join unnest(manufacture) manufacture
-cross join unnest(gv.purchase) as p
+cross join unnest(purchase) as p
 
 #Unnest ettiğimiz bu 2 array içinden car.id, car.model ve manufacture.year alanlarını uygun aliaslar ile seçmek
 on car.id=manufacture.id;
